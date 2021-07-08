@@ -19,6 +19,7 @@ namespace freezeapi.Controllers
         {
             _context = context;
         }
+        
 
         // GET: api/Freeze
         [HttpGet]
@@ -102,6 +103,8 @@ namespace freezeapi.Controllers
         private bool FreezeItemExists(long id)
         {
             return _context.FreezeItems.Any(e => e.Id == id);
-        }
+        }        
     }
+
+    
 }
